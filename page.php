@@ -5,7 +5,6 @@
       <?php while( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <header class="entry-header">
-            <time class="tiny-text entry-date"><?php echo get_the_date(); ?></time>
             <?php the_title( '<h1 class="heading-big entry-title">', '</h1>' ); ?>
           </header>
 
