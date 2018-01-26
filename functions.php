@@ -9,7 +9,7 @@ function mytheme_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_scripts' );
 
 /*
- * Setup White Snow theme.
+ * Setup Mytheme theme.
  */
 function mytheme_setup_theme() {
   // Enable support for Post Thumbnails.

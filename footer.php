@@ -1,7 +1,7 @@
     </div> <!-- #content -->
 
     <footer id="footer" class="site-footer">
-      フッター
+      <?php bloginfo( 'name' ) ?>, All rights reserved.
     </footer>
   </div> <!-- #container -->
 </div> <!-- #page -->
