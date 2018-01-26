@@ -19,8 +19,14 @@
           <?php bloginfo( 'description' ); ?>
         </div>
       </div>
+
       <nav id="main-navigation" class="site-navigation" role="navigation">
-        メニュー
+        <?php wp_nav_menu( array(
+          'theme_location'  => 'header-navigation',
+          'menu_id'         => 'main-nav-top',
+          'menu_class'      => 'main-nav',
+        ) ); ?>
       </nav>
+
     </header>
     <div id="content" class="site-content">
