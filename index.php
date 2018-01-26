@@ -26,6 +26,12 @@
             </article><hr>
           <?php endwhile; ?>
         </div>
+        <?php
+          the_posts_pagination( array(
+            'prev_text' => '',
+            'next_text' => '',
+          ) );
+        ?>
       <?php else: ?>
         <section class="no-result not-found">
           <header class="entry-header">
