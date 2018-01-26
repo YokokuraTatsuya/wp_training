@@ -28,6 +28,7 @@
         </div>
         <?php
           the_posts_pagination( array(
+            'screen_reader_text' => 'ページネーション',
             'prev_text' => '',
             'next_text' => '',
           ) );
@@ -44,5 +45,7 @@
       <?php endif; ?>
     </main>
   </div>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

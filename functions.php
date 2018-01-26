@@ -17,3 +17,21 @@ function mytheme_setup_theme() {
   set_post_thumbnail_size( 760, 300, true );
 }
 add_action( 'after_setup_theme', 'mytheme_setup_theme' );
+
+/*
+ * Register sidebar
+ */
+function mytheme_widgets_init() {
+  // Register main sidebar
+  register_sidebar( array(
+    'name'          => 'Main Sidebar',
+    'id'            => 'sidebar-main',
+    'description'   => 'Add widgets you want to display in sidebar.',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5 class="widget-title">',
+    'after_title'   => '</h5>',
+  ) );
+}
+
+add_action( 'widgets_init', 'mytheme_widgets_init' );
